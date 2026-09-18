@@ -1,0 +1,65 @@
+/* ==========================================================================
+   RESPONSIVE — Ajustes transversales por punto de quiebre
+   Mobile (<640px) / Tablet (640–1023px) / Desktop (>=1024px)
+   ========================================================================== */
+
+/* ---------- Navegación: mobile <-> desktop ---------- */
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+  }
+
+  .mobile-nav-toggle,
+  .mobile-nav-drawer {
+    display: none;
+  }
+}
+
+/* ---------- Tarjetas anchas que colapsan en móvil ---------- */
+@media (max-width: 767px) {
+  .comm-type-card--assertive,
+  .evidence-card--wide {
+    grid-column: span 1;
+  }
+
+  .roadmap-step {
+    height: auto;
+    min-height: 10rem;
+  }
+}
+
+/* ---------- Header: reducir altura en pantallas muy pequeñas ---------- */
+@media (max-width: 380px) {
+  .site-header {
+    height: 4.5rem;
+  }
+
+  .site-main {
+    padding-top: 4.5rem;
+  }
+
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+}
+
+/* ---------- Ajustes de tipografía hero en pantallas grandes ---------- */
+@media (min-width: 1280px) {
+  .container {
+    padding-inline: var(--margin-desktop);
+  }
+}
+
+/* ---------- Impresión ---------- */
+@media print {
+  .site-header,
+  .mobile-nav-drawer,
+  .modal,
+  .closing-banner__actions {
+    display: none !important;
+  }
+
+  .site-main {
+    padding-top: 0;
+  }
+}

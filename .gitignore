@@ -1,0 +1,22 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores / IDE
+.vscode/
+.idea/
+*.swp
+
+# Entornos y logs (por si se usa alguna herramienta auxiliar de desarrollo)
+node_modules/
+.env
+.env.*
+*.log
+npm-debug.log*
+
+# Despliegue
+.vercel/
+
+# Stitch context
+stitch_conectamente_learning_portal/
