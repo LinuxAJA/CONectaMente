@@ -55,15 +55,62 @@
   ];
 
   const APPRENTICES = [
-    { id: "lino", name: "Lino Aguirre" },
+    { id: "lino", name: "Lino Aguirre"},
     { id: "matias", name: "Matias Arena" },
     { id: "samuel", name: "Samuel Salcedo" },
   ];
+
+  const ACTIVITIES_CONTENT = {
+    lino: {
+      "01": {
+        hicimos: "La intructora leyó el inicio de una historia y a partir de ahí, nosotros lo completamos, según nuestra imaginación, con la regla de incluir, por cada parrafo que realizabamos, la palabra que la instructora nos diera en el plazo de tiempo designado",
+        aprendimos: "Que en la historia que creamos se reflejan nuestras vivencias e ideas, que ninguna historia es igual, y que lo que comunicamos, dice mucho de cada uno.",
+        documentUrl: "assets/documents/lino/lino-actividad-01-sapa-caramelo.pdf",
+        documentLabel: "",
+      },
+      "02": {
+        hicimos: "Vimos un video, y apartir de ahí respondimos unas preguntas, atentiendo a lo aprendido en el vídeo",
+        aprendimos: "Los tipos de comunicación, sus características, como identificarlos y sus consecuencias en la comunicación.",
+        documentUrl: "assets/documents/lino/lino-actividad-02-taller-tipos-comunicacion.pdf",
+        documentLabel: "",
+      },
+      "03": {
+        hicimos: "Desarrolle con mi equipo asignado, una presentación sobre la función fática. Presentando de forma visual, la tematica correspondiente a esta función. Y, através de un designado del grupo, se realizó la dramatización de nuestra función",
+        aprendimos: "No solamente se aprendió sobre lo relacionado con la función fática, sino que, al termino de la actividad, y con la dramatización, conocí cuales son las funciones del lenguaje y como se evidencian y aplican en el día a día.",
+        documentUrl: "https://gamma.app/docs/La-funcion-fatica-del-lenguaje-d3av1tx9m8iyyg6?mode=doc",
+        documentLabel: "",
+      },
+      "04": {
+        hicimos: "Investigué y redacte junto a mi compañero asignado, todo lo relacionado a los Emblemas de la comunicación no verbal en la interacción social",
+        aprendimos: "A identificar los emblemas que ejecutamos en nuestro dia a dia, su importancia y su signifcado",
+        documentUrl: "assets/documents/lino/lino-actividad-04-comunicacion-no-verbal.pdf",
+        documentLabel: "",
+      },
+      "05": {
+        hicimos: "Vimos la película 'El Abuelo', analizandola e identificando en esta dos escenas que sirvan de ejemplo de ejecución de los Emblemas",
+        aprendimos: "A prestar atención y detectar en las interacciones sociales los Emblemas y su significado no verbal",
+        documentUrl: "assets/documents/lino/lino-actividad-05-ejemplos-pelicula.pdf",
+        documentLabel: "",
+      }
+    },
+    matias: {
+      
+    },
+    samuel: {
+      
+    }
+  }
 
   function buildPortfolioData() {
     const data = {};
     APPRENTICES.forEach(function (apprentice) {
       data[apprentice.id] = ACTIVITY_TEMPLATE.map(function (activity) {
+        
+        const overrides = 
+        (ACTIVITIES_CONTENT[apprentice.id] && 
+          ACTIVITIES_CONTENT[apprentice.id][activity.num]) || 
+        {};
+
         return Object.assign({}, activity, {
           apprentice: apprentice.name,
           hicimos: "",
@@ -74,7 +121,9 @@
             "-actividad-" +
             activity.num +
             " · [EVIDENCIA PENDIENTE]",
-        });
+        },
+        overrides
+        );
       });
     });
     return data;
