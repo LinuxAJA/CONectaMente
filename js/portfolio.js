@@ -123,14 +123,15 @@
         aprendimos: "reconocer como las personas regulan la conversacion mediante gestos y como expresan estados emocionales o tension",
         documentUrl: "assets/documents/matias/matias-actividad-05-ejemplos-pelicula.pdf",
         documentLabel: "",
-      },
-      samuel: {
-
       }
-    }
+    },
+    samuel: {
 
-  function buildPortfolioData() {
-      const data = {};
+    }
+  }
+
+function buildPortfolioData() {
+  const data = {};
   APPRENTICES.forEach(function (apprentice) {
     data[apprentice.id] = ACTIVITY_TEMPLATE.map(function (activity) {
 
@@ -157,7 +158,7 @@
   return data;
 }
 
-  const portfolioData = buildPortfolioData();
+const portfolioData = buildPortfolioData();
 
 function renderActivities(apprenticeId) {
   const container = document.getElementById("portfolio-activities-container");
