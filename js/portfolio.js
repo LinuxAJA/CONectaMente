@@ -55,7 +55,7 @@
   ];
 
   const APPRENTICES = [
-    { id: "lino", name: "Lino Aguirre"},
+    { id: "lino", name: "Lino Aguirre" },
     { id: "matias", name: "Matias Arena" },
     { id: "samuel", name: "Samuel Salcedo" },
   ];
@@ -94,34 +94,63 @@
       }
     },
     matias: {
-      
+      "01": {
+        hicimos: "Debiamos continuar la historia mientras la instructora nos ponia unas palabras en el tablero y teniamos que continuarla con las palabras que ella nos dijo por cada palabra teniamos cierto tiempo para incluirla en el texto",
+        aprendimos: "Yo aprendi que cada palabra que yo escribia en este texto tiene que ver con lo que es mi vida y como soy yo",
+        documentUrl: "assets/documents/matias/matias-actividad-01-sapa-caramelo.pdf",
+        documentLabel: "",
+      },
+      "02": {
+        hicimos: "Analizamos videos y respondimos preguntas sobbre los estilos de comunicacion y ejemplos cotidianos lo trabajos en grupos",
+        aprendimos: "identifacar las caracteristicas de la comunicacion asertiva y a reconocer las diferencias entre la comuncacion pasiva, agresiva y pasiva-agresiva para lograr interacciones mas eficaces en el ambito personal, social y laboral",
+        documentUrl: "assets/documents/matias/matias-actividad-02-taller-tipos-comunicacion.pdf",
+        documentLabel: "",
+      },
+      "03": {
+        hicimos: "Presentamos una exposicion sobre la funcion poetica del lenguaje",
+        aprendimos: "Comprender como el lenguaje va mas alla de solo informar y se utiliza de forma estetica o creativa para generar belleza y expresividad a traves de las palabras",
+        documentUrl: "assets/documents/matias/matias-actividad-03-funciones-del-lenguaje.pdf",
+        documentLabel: "",
+      },
+      "04": {
+        hicimos: "Un trabajo de investigacion sobre los ademanes en la comunicacion no verbal trabajado en grupos asiganados por la instructora",
+        aprendimos: "el rol fundamental que teien los gestos y movimientos corporales y faciales en la comunicacion diaria",
+        documentUrl: "assets/documents/matias/matias-actividad-04-comunicacion-no-verbal.pdf",
+        documentLabel: "",
+      },
+      "05": {
+        hicimos: "Analizmamos escenas de la pelicula el abuelo para identificar y describir el usu de ademanes no verbales",
+        aprendimos: "reconocer como las personas regulan la conversacion mediante gestos y como expresan estados emocionales o tension",
+        documentUrl: "assets/documents/matias/matias-actividad-05-ejemplos-pelicula.pdf",
+        documentLabel: "",
+      },
     },
     samuel: {
-      "01":{
+      "01": {
         hicimos: "Realizamos a partir de una historia que la profesora nos fue contando el inicio, la resolucion del cuento, con palabras las cuales ella nos daba y asi haciendo un cuento completo.",
         aprendimos: "Que en esa actividad, nos dimos cuenta que, segun lo que contabamos, se reflejaban nuestras vivencias, ideas y personalidad.",
         documentUrl: "assets/documents/samuel/samuel-actividad-01-sapa-caramelo.pdf",
         documentLabel: "",
       },
-      "02":{
+      "02": {
         hicimos: "Vimos un video los cuales se reflejaban los distintos tipos de comunicación, y mediante preguntas, pudimos identificarlos.",
         aprendimos: "Aprendi sobre los distintos tipos de comunicación y como identificarlos en el dia a dia. Ademas de sus consecuencias en la comunicación.",
         documentUrl: "assets/documents/samuel/samuel-actividad-02-taller-tipos-comunicacion.pdf",
         documentLabel: "",
       },
-      "03":{
+      "03": {
         hicimos: "Realizams una investigacion en parejas, en el cual a cada pareja le tocaba una funcion distinta de las que habian, realizando unas diapositivas para despues entre los lideres elegidos de cad afuncion, hacer una mini dramatización de como funciona en el dia a dia nuestra función asignada.",
         aprendimos: "Aprendi sobre las funciones del lenguaje, las diferencias entre ellas, como se evidencian y como podemos utilizarlas en nuestro dia a dia.",
         documentUrl: "assets/documents/samuel/samuel-actividad-03-funciones-del-lenguaje.pdf",
         documentLabel: "",
       },
-      "04":{
+      "04": {
         hicimos: "En grupos, investigamos sobre tipos de comunicacion no verbal,en el cual a mi grupo le toco el paralenguaje, sus distintas formas y como influyen en la comunicacion. Realizando un documento de investigacion.",
         aprendimos: "Aprendi sobre el paralenguaje, sus distintas formas y como influyen en la comunicacion. Ademas de su importancia en la comunicacion.",
         documentUrl: "assets/documents/samuel/samuel-actividad-04-comunicacion-no-verbal.pdf",
         documentLabel: "",
       },
-      "05":{
+      "05": {
         hicimos: "Observamos la pelicula 'El Abuelo' y tuvimos que identificar dos escenas donde se evidencien el paralenguaje, y posteriormente realizamos un documento identificando el paralenguaje.",
         aprendimos: "Aprendi sobre el paralenguaje, sus distintas formas y como influyen en la comunicacion. Ademas de su importancia en la comunicacion.",
         documentUrl: "assets/documents/samuel/samuel-actividad-05-ejemplos-pelicula.pdf",
@@ -134,11 +163,11 @@
     const data = {};
     APPRENTICES.forEach(function (apprentice) {
       data[apprentice.id] = ACTIVITY_TEMPLATE.map(function (activity) {
-        
-        const overrides = 
-        (ACTIVITIES_CONTENT[apprentice.id] && 
-          ACTIVITIES_CONTENT[apprentice.id][activity.num]) || 
-        {};
+
+        const overrides =
+          (ACTIVITIES_CONTENT[apprentice.id] &&
+            ACTIVITIES_CONTENT[apprentice.id][activity.num]) ||
+          {};
 
         return Object.assign({}, activity, {
           apprentice: apprentice.name,
@@ -151,7 +180,7 @@
             activity.num +
             " · [EVIDENCIA PENDIENTE]",
         },
-        overrides
+          overrides
         );
       });
     });
