@@ -97,7 +97,36 @@
       
     },
     samuel: {
-      
+      "01":{
+        hicimos: "Realizamos a partir de una historia que la profesora nos fue contando el inicio, la resolucion del cuento, con palabras las cuales ella nos daba y asi haciendo un cuento completo.",
+        aprendimos: "Que en esa actividad, nos dimos cuenta que, segun lo que contabamos, se reflejaban nuestras vivencias, ideas y personalidad.",
+        documentUrl: "assets/documents/samuel/samuel-actividad-01-sapa-caramelo.pdf",
+        documentLabel: "",
+      },
+      "02":{
+        hicimos: "Vimos un video los cuales se reflejaban los distintos tipos de comunicación, y mediante preguntas, pudimos identificarlos.",
+        aprendimos: "Aprendi sobre los distintos tipos de comunicación y como identificarlos en el dia a dia. Ademas de sus consecuencias en la comunicación.",
+        documentUrl: "assets/documents/samuel/samuel-actividad-02-taller-tipos-comunicacion.pdf",
+        documentLabel: "",
+      },
+      "03":{
+        hicimos: "Realizams una investigacion en parejas, en el cual a cada pareja le tocaba una funcion distinta de las que habian, realizando unas diapositivas para despues entre los lideres elegidos de cad afuncion, hacer una mini dramatización de como funciona en el dia a dia nuestra función asignada.",
+        aprendimos: "Aprendi sobre las funciones del lenguaje, las diferencias entre ellas, como se evidencian y como podemos utilizarlas en nuestro dia a dia.",
+        documentUrl: "assets/documents/samuel/samuel-actividad-03-funciones-del-lenguaje.pdf",
+        documentLabel: "",
+      },
+      "04":{
+        hicimos: "En grupos, investigamos sobre tipos de comunicacion no verbal,en el cual a mi grupo le toco el paralenguaje, sus distintas formas y como influyen en la comunicacion. Realizando un documento de investigacion.",
+        aprendimos: "Aprendi sobre el paralenguaje, sus distintas formas y como influyen en la comunicacion. Ademas de su importancia en la comunicacion.",
+        documentUrl: "assets/documents/samuel/samuel-actividad-04-comunicacion-no-verbal.pdf",
+        documentLabel: "",
+      },
+      "05":{
+        hicimos: "Observamos la pelicula 'El Abuelo' y tuvimos que identificar dos escenas donde se evidencien el paralenguaje, y posteriormente realizamos un documento identificando el paralenguaje.",
+        aprendimos: "Aprendi sobre el paralenguaje, sus distintas formas y como influyen en la comunicacion. Ademas de su importancia en la comunicacion.",
+        documentUrl: "assets/documents/samuel/samuel-actividad-05-ejemplos-pelicula.pdf",
+        documentLabel: "",
+      }
     }
   }
 
