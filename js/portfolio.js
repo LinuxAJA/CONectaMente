@@ -139,7 +139,7 @@
         documentLabel: "",
       },
       "03": {
-        hicimos: "Realizams una investigacion en parejas, en el cual a cada pareja le tocaba una funcion distinta de las que habian, realizando unas diapositivas para despues entre los lideres elegidos de cad afuncion, hacer una mini dramatización de como funciona en el dia a dia nuestra función asignada.",
+        hicimos: "Realizamos una investigacion en parejas, en el cual a cada pareja le tocaba una funcion distinta de las que habian, realizando unas diapositivas para despues entre los lideres elegidos de cad afuncion, hacer una mini dramatización de como funciona en el dia a dia nuestra función asignada.",
         aprendimos: "Aprendi sobre las funciones del lenguaje, las diferencias entre ellas, como se evidencian y como podemos utilizarlas en nuestro dia a dia.",
         documentUrl: "assets/documents/samuel/samuel-actividad-03-funciones-del-lenguaje.pdf",
         documentLabel: "",
